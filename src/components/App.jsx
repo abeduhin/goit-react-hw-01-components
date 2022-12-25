@@ -1,16 +1,16 @@
-export const App = () => {
+export const App = ({ children }) => {
   return (
     <div
-      style={{
-        height: '100vh',
+      style= {{
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        
       }}
     >
-      React homework template
+      { children }
     </div>
   );
 };
+// Kореневий компонент-App - прописуємо базові стилі до всіх React-компонентів (children)

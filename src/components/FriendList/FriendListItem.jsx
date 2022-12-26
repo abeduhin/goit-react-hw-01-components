@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './Friend.module.css';
+import css from './FriendListItem.module.css';
 
 export const FriendListItem = ({ isOnline, avatar, name }) => (
 

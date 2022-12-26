@@ -1,13 +1,8 @@
 import PropTypes from 'prop-types';
+import getRandomHexColor from './GetRandomHexColor';
 import css from './Statistics.module.css';
 // Імпортуємо PropTypes для перевірки, шо типи пропсів компонента валідні.
 // Імпортуємо CSS стилі з файлу Statistics.module.css
-
-function getRandomHexColor() {
-  let bgColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  return bgColor;
-}
-// Пишемо функію для рандомного коліру
 
 export const Statistics = ({ title, stats }) => (
    // Cтворюваємо та експортуємо DOM елемент наступної структури, усі ісходні дані дінамічні.

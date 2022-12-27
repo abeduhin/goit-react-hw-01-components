@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import getRandomHexColor from './GetRandomHexColor';
+import getRandomHexColor from './getRandomHexColor.js';
 import css from './Statistics.module.css';
 // Імпортуємо PropTypes для перевірки, шо типи пропсів компонента валідні.
 // Імпортуємо CSS стилі з файлу Statistics.module.css
@@ -32,7 +32,7 @@ export const Statistics = ({ title, stats }) => (
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
-    PropTypes.exact({
+    PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
